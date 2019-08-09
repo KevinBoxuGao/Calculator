@@ -2,7 +2,6 @@
 dist
 build
 .eslintrc.json
-.babelrc
 
 # Logs
 logs
