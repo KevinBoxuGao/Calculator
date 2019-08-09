@@ -1,7 +1,19 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "../css/Button.css";
 
 class Button extends React.Component {
+  static propTypes = {
+    name: PropTypes.string,
+    yellow: PropTypes.bool,
+    wide: PropTypes.bool,
+    clickHandler: PropTypes.func,
+  }
+
+  handleClick = () => {
+    this.props.clickHandler(this.props.name);
+  };
+
   render() {
     const className = [
       "component-button",
@@ -11,7 +23,7 @@ class Button extends React.Component {
 
     return(
       <div className={className.join(" ").trim()}>
-        <button>{this.props.name}</button>
+        <button onClick={this.handleClick}>{this.props.name}</button>
       </div>
     );
   }

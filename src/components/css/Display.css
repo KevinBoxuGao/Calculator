@@ -1,12 +1,39 @@
 .component-display {
-  width: 100%;
   text-align: right;
+  width: 100%;
   font-weight: 200;
   flex: 0 0 auto;
 }
 
-.component-display > div{
-  font-size: 2rem;
-  padding: 1.5rem 1rem;
+.display-value {
+  font-size: 2.5rem;
+  padding: 0 1rem 1rem 1rem;
   border: solid 1px rgb(173, 170, 170);
+  border-top: none;
+}
+
+.display-history {
+  font-size: 1.75rem;
+  padding: 2.75rem 1rem 0.25rem 1rem;
+}
+
+.display-history > p {
+  margin: 0;
+  right: 1.25rem;
+  top: 1rem;
+  position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
+  .display-value{
+    font-size: 2rem;
+    padding: 0.8rem 0.8rem 0.8rem;
+  }
+  .display-history {
+    font-size: 1.4rem;
+    padding: 2.2rem 0.8rem 0.2rem 0.8rem;
+  }
+  .display-history > p {
+    right: 1rem;
+  }
 }
