@@ -1,6 +1,6 @@
 #configuration
 dist
-webpack.config.js
+build
 .eslintrc.json
 .babelrc
 
