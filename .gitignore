@@ -1,5 +1,7 @@
 #configuration
 webpack.config.js
+.eslintrc.json
+.babelrc
 
 # Logs
 logs

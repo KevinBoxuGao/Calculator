@@ -1,5 +1,4 @@
 import React from "react";
-import {hot} from "react-hot-loader";
 import Display from "./Display.js";
 import ButtonPanel from "./ButtonPanel";
 import calculate from "../../logic/calculate.js"
