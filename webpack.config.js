@@ -43,5 +43,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve('public/index.html'),
     }),
-  ]
+  ], 
 };
