@@ -16,8 +16,9 @@ class ButtonPanel extends React.Component {
     return (
       <div className="component-button_panel">
         <div>
-          <Button name="C" clickHandler={this.handleClick} wide></Button>
-          <Button name="%" clickHandler={this.handleClick} yellow></Button>
+          <Button name="AC" clickHandler={this.handleClick} wide></Button>
+          <Button name="Del" clickHandler={this.handleClick}></Button>
+          <Button name="%" clickHandler={this.handleClick} wide yellow></Button>
         </div>
         <div>
           <Button name="7" clickHandler={this.handleClick}></Button>
