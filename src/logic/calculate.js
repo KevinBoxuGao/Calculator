@@ -129,7 +129,7 @@ function calculate(state, buttonName) {
     } else if (buttonName == "x") {
       if (state.history[state.history.length-1] == "="){
         return {
-          history: state.current + buttonName,
+          history: state.current + "*",
           current: "0",
         };
       } else {
