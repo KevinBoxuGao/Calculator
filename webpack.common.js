@@ -1,5 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -48,10 +49,15 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      template: './public/index.html',
+      filename: 'index.html'
+    }),
   ],
   output: {
     path: path.resolve(__dirname, 'dist/'),
     filename: '[name].bundle.js',
-    publicPath: "/dist/"
+    publicPath: "./dist/"
   }
 };

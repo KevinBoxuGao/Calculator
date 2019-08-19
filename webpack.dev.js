@@ -5,8 +5,16 @@ const webpack = require("webpack");
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
+  module: {
+    rules: [
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
+      },
+    ]
+  },
   devServer: {
-    contentBase: 'public/',
+    contentBase: './dist',
     compress: true,
     publicPath: "http://localhost:3000/dist/",
     port: 3000,
