@@ -1,7 +1,6 @@
 #configuration
-build
 .eslintrc.json
-
+dist
 # Logs
 logs
 *.log
